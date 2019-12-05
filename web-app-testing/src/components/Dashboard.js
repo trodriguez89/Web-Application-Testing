@@ -11,6 +11,9 @@ const ButtonContain = styled.div`
 const ButtonStyle = styled.button`
     width: 20%;
     padding: 5px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
 `;
 
 const Dashboard = (props) => {

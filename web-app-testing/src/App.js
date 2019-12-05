@@ -26,7 +26,12 @@ const PicContainer = styled.div`
   background-repeat: repeat;
   display: flex;
   align-items: center;
-
+`
+const H2Style = styled.h2`
+  font-size: 40px;
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+  padding: 5px 0;
 `
 
 function App() {
@@ -67,7 +72,7 @@ function App() {
 
   return (
     <MainContainer>
-      <h2>Plaaaaaay Ball!</h2>
+      <H2Style>Plaaaaaay Ball!</H2Style>
       <PicContainer>
       <Container>
       <Display strikes={strikes} balls={balls}/>

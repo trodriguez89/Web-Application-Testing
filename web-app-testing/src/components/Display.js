@@ -13,17 +13,30 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
 `
-
+const NumberStyle = styled.div`
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+`
+const H2Style = styled.h2`
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+`
 const Display = (props) => {
     return (
         <DisplayContain>
             <Container>
-                <h2>Strikes</h2>
-                <div>{props.strikes}</div>
+                <H2Style>Strikes</H2Style>
+                <NumberStyle>{props.strikes}</NumberStyle>
             </Container>
             <Container>
-            <h2>Balls</h2>
-            <div>{props.balls}</div>
+                <H2Style>Balls</H2Style>
+                <NumberStyle>{props.balls}</NumberStyle>
             </Container>
         </DisplayContain>
     )
