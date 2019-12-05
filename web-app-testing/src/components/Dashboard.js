@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const ButtonContain = styled.div`
-    border: 2px solid green;
     height: 50%;
     width: 100%;
     display: flex;
@@ -10,8 +9,8 @@ const ButtonContain = styled.div`
     justify-content: space-around;
 `
 const ButtonStyle = styled.button`
-    border: 1px solid pink;
     width: 20%;
+    padding: 5px;
 `;
 
 const Dashboard = (props) => {

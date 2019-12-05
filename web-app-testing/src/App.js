@@ -2,18 +2,31 @@ import React, {useState} from 'react';
 import Display from "./components/Display";
 import Dashboard from "./components/Dashboard";
 import styled from "styled-components";
+import BackgroundImage from "./images/baseballs.jpg"
+import Baseball from "./images/BaseballCorrectSize.png";
 
 const MainContainer = styled.div`
   text-align: center;
-  border: 2px solid red;
-  height: 100vh;
+  height: 90vh;
+  
 `
 
 const Container = styled.div`
-  border: 2px solid red;
-  width: 800px;
+  border: 1px solid black;
+  width: 900px;
   height: 80vh;
   margin: 0 auto;
+  background-color: white;
+`
+
+const PicContainer = styled.div`
+  border-top: 2px solid red;
+  height: 90vh;
+  background-image: url(${Baseball});
+  background-repeat: repeat;
+  display: flex;
+  align-items: center;
+
 `
 
 function App() {
@@ -55,10 +68,12 @@ function App() {
   return (
     <MainContainer>
       <h2>Plaaaaaay Ball!</h2>
+      <PicContainer>
       <Container>
       <Display strikes={strikes} balls={balls}/>
       <Dashboard strikes={strikes} balls={balls} strike={strike} ball={ball} foul={foul} hit={hit}/>
       </Container>
+      </PicContainer>
     </MainContainer>
   );
 }

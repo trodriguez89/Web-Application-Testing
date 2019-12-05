@@ -5,12 +5,11 @@ const DisplayContain = styled.div`
     display: flex;
     width: 100%;
     height: 50%;
-    border: 2px solid blue;
 `
 const Container = styled.div`
     display: flex;
+    flex-direction: column;
     width: 50%;
-    border: 2px solid red;
     align-items: center;
     justify-content: center;
 `
@@ -19,10 +18,12 @@ const Display = (props) => {
     return (
         <DisplayContain>
             <Container>
-                <h2>Strikes: {props.strikes}</h2>
+                <h2>Strikes</h2>
+                <div>{props.strikes}</div>
             </Container>
             <Container>
-            <h2>Balls: {props.balls}</h2>
+            <h2>Balls</h2>
+            <div>{props.balls}</div>
             </Container>
         </DisplayContain>
     )
