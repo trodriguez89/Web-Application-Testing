@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import Display from "./components/Display";
 import Dashboard from "./components/Dashboard";
 import styled from "styled-components";
-import BackgroundImage from "./images/baseballs.jpg"
 import Baseball from "./images/BaseballCorrectSize.png";
 
 const MainContainer = styled.div`
@@ -32,6 +31,8 @@ const H2Style = styled.h2`
   font-family: 'Indie Flower', cursive;
   margin: 0;
   padding: 5px 0;
+  background-color: green;
+  color: white;
 `
 
 function App() {

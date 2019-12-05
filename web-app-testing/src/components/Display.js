@@ -14,7 +14,7 @@ const Container = styled.div`
     justify-content: center;
 `
 const NumberStyle = styled.div`
-    border: 1px solid black;
+    border: 2px solid black;
     height: 200px;
     width: 200px;
     display: flex;
