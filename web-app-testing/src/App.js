@@ -1,10 +1,20 @@
 import React, {useState} from 'react';
-import Scoreboard from "./components/Scoreboard";
-import Buttons from "./components/Buttons";
+import Display from "./components/Display";
+import Dashboard from "./components/Dashboard";
 import styled from "styled-components";
 
+const MainContainer = styled.div`
+  text-align: center;
+  border: 2px solid red;
+  height: 100vh;
+`
 
-import './App.css';
+const Container = styled.div`
+  border: 2px solid red;
+  width: 800px;
+  height: 80vh;
+  margin: 0 auto;
+`
 
 function App() {
   const [strikes, setStrikes] = useState(0);
@@ -43,11 +53,13 @@ function App() {
 
 
   return (
-    <div>
-      <h2>Baseball!</h2>
-      <Scoreboard strikes={strikes} balls={balls}/>
-      <Buttons strikes={strikes} balls={balls} strike={strike} ball={ball} foul={foul} hit={hit}/>
-    </div>
+    <MainContainer>
+      <h2>Plaaaaaay Ball!</h2>
+      <Container>
+      <Display strikes={strikes} balls={balls}/>
+      <Dashboard strikes={strikes} balls={balls} strike={strike} ball={ball} foul={foul} hit={hit}/>
+      </Container>
+    </MainContainer>
   );
 }
 
