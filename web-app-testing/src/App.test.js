@@ -4,12 +4,6 @@ import App from './App';
 import Dashboard from "./components/Dashboard";
 import Display from "./components/Display";
 
-// test('renders learn react link', () => {
-//   const { getByText } = render(<App />);
-//   const linkElement = getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
-
 test("title is displaying correctly", () => {
   const {getByText} = render(<App />)
   getByText(/plaaaaaay ball/i)
